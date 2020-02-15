@@ -27,6 +27,8 @@ uecs0ユーザが作成されたら、DBを作成する。DB名は uecs0。
 
 ### t_data (Data in a CCM record)
 
+日常的にデータを蓄積するテーブル。
+
 | Name     | Type                     | 省略時     | Remarks              |
 |:--------:|:------------------------:|:----------:|:---------------------|
 | TOD      | timestamp with time zone | now()      | 受信時のTOD          |
@@ -41,6 +43,8 @@ uecs0ユーザが作成されたら、DBを作成する。DB名は uecs0。
 
 ### t_MODE (NODE table)
 
+ノード毎の情報が整理される。
+
 | Name     | Type                     | 省略時     | Remarks              |
 |:--------:|:------------------------:|:----------:|:---------------------|
 | TOD      | timestamp with time zone | now()      | 受信時のTOD          |
@@ -52,6 +56,8 @@ uecs0ユーザが作成されたら、DBを作成する。DB名は uecs0。
 | MACADDR  | macaddr                  | 不可       | MACアドレス          |
 
 ### t_CCM (CCM Table)
+
+CCM毎の情報が整理される。
 
 | Name     | Type                     | 省略時     | Remarks              |
 |:--------:|:------------------------:|:----------:|:---------------------|
