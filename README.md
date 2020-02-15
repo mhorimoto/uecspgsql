@@ -42,7 +42,7 @@ uecs0ユーザが作成されたら、DBを作成する。DB名は uecs0。
 | IP       | inet                     | 不可       | IPアドレス           |
 | SERIALID | bigserial                | 自動       | レコードID           |
 
-### 1-2-2. t_MODE (NODE table)
+### 1-2-2. t_NODE (NODE table)
 
 ノード毎の情報が整理される。
 
@@ -71,9 +71,8 @@ CCM毎の情報が整理される。
 | REGION   | integer                  | 不可       |                      |
 | ORD      | integer                  | 不可       |                      |
 | PRIORITY | integer                  | 不可       |                      |
-| CAST     | integer                  | 0          | 小数点下桁数         |
+| CT       | integer                  | 0          | 小数点下桁数         |
 | UNIT     | text                     | NULL       | 単位                 |
 | SR       | char(1)                  | 不可       | 送受信区別           |
 | LV       | text                     | 不可       | A-1M-0などのレベル   |
-| PRIORITY | integer                  | 不可       |                      |
 | SERIALID | bigserial                | 自動       | レコードID           |
