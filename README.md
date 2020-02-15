@@ -2,7 +2,7 @@
 
 PostgreSQL DBにUECSデータを収めるスキームを記述する。
 
-受信には uecs/recvdata.py などを用いる。
+受信には uecs/recvdata.py などを用いる。このデータの参照にはAPIを用いる。
 
 広域におけるNODE,CCMデータの重複は考慮しない。DBを増やすことで対応する。
 
