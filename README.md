@@ -8,7 +8,7 @@ PostgreSQL DBにUECSデータを収めるスキームを記述する。
 
 DBは複数個作成するが、USERは、問題がなければ少ない方が管理が楽になる。
 
-## How to Setup
+## 1-1. How to Setup
 
 ユーザなどを登録する前にPostgresqlのサーバを起動する。
 
@@ -23,9 +23,9 @@ uecs0ユーザが作成されたら、DBを作成する。DB名は uecs0。
     # createdb -U postgres -O uecs0 uecs0
 
 
-## DB Fields
+## 1-2. DB Fields
 
-### t_data (Data in a CCM record)
+### 1-2-1. t_data (Data in a CCM record)
 
 日常的にデータを蓄積するテーブル。
 
@@ -41,7 +41,7 @@ uecs0ユーザが作成されたら、DBを作成する。DB名は uecs0。
 | VALUE    | bigint                   | 不可       | データ値             |
 | IP       | inet                     | 不可       | IPアドレス           |
 
-### t_MODE (NODE table)
+### 1-2-2. t_MODE (NODE table)
 
 ノード毎の情報が整理される。
 
@@ -55,7 +55,7 @@ uecs0ユーザが作成されたら、DBを作成する。DB名は uecs0。
 | IP       | inet                     | 不可       | IPアドレス           |
 | MACADDR  | macaddr                  | 不可       | MACアドレス          |
 
-### t_CCM (CCM Table)
+### 1-2-3. t_CCM (CCM Table)
 
 CCM毎の情報が整理される。
 
