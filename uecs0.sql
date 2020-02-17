@@ -76,7 +76,7 @@ CREATE TABLE public.t_data (
     region integer NOT NULL,
     ord integer NOT NULL,
     priority integer NOT NULL,
-    value bigint NOT NULL,
+    value numeric(20,18) NOT NULL,
     ip inet NOT NULL,
     serialid bigint NOT NULL
 );

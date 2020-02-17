@@ -19,6 +19,7 @@ DBは複数個作成するが、USERは、問題がなければ少ない方が�
     # createuser -U postgres -P uecs0
 
 uecs0ユーザが作成されたら、DBを作成する。DB名は uecs0。
+ユーザ名およびDB名は対象となる環境に寄って適宜変更してデータが混ざらないようにする工夫を各自で実施する。
 
     # createdb -U postgres -O uecs0 uecs0
 
@@ -38,7 +39,7 @@ uecs0ユーザが作成されたら、DBを作成する。DB名は uecs0。
 | REGION   | integer                  | 不可       |                      |
 | ORD      | integer                  | 不可       |                      |
 | PRIORITY | integer                  | 不可       |                      |
-| VALUE    | bigint                   | 不可       | データ値             |
+| VALUE    | numeric(20,18)           | 不可       | データ値             |
 | IP       | inet                     | 不可       | IPアドレス           |
 | SERIALID | bigserial                | 自動       | レコードID           |
 
